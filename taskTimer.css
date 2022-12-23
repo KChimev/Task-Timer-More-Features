@@ -1,0 +1,107 @@
+*{
+    font-family:"Open Sans",sans-serif; 
+}
+body {
+    background-color: #9ADCFF;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    align-items: center;
+    height: fit-content;
+    margin: 2em;
+    margin-left: auto;
+    margin-right: auto;
+}
+#time-taken{
+    width: 12em;
+    height: 2em;
+    font-size: 2.2em;
+    text-align: center;
+    border: 2px solid black;
+}
+#start{
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+}
+#stop{
+    width: 6em;
+    height: 6em; 
+    border-radius: 50%;
+}
+#finished{
+    width: 6em;
+    height: 6em; 
+    border-radius: 50%;
+    margin-left: 1em;
+}
+#add{
+    width: 6em;
+    height: 6em; 
+    border-radius: 50%;
+    margin-left: 1em;
+}
+#timer-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+}
+#tasks-container{
+    border: 1px solid black;
+    background-color: aliceblue;
+    width: 50em;
+    height: 50em;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-radius: 10%;
+    box-shadow: 7px 7px  rgb(0, 0, 0,0.2);
+    text-align: center;
+    color:black;
+    font-size: 1em;
+}
+.material-icons{
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 1000;
+    font-size: 40px;
+}
+h2{
+    font-size: 3em;
+    text-decoration: underline;
+}
+#new-task{
+    width: 20em;
+    height: 2em;
+    margin-top: 1em;
+    font-size: 2em;
+    display: none;
+}
+#current-task{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5em;
+    width: fit-content;
+    height: 3em;
+    background-color: white;
+    border: 2px solid black;
+    margin-bottom: 1em;
+    display: none;
+}
+#past{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+ul {
+    list-style-type: none;
+    font-size: 1.3em;
+}

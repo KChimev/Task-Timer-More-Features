@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+<link rel="stylesheet" href="taskTimer.css">
+<title>Task Timer</title>
+</head>
+
+<body>
+<div id="container">
+    <div id="current-task">
+    </div>
+
+    <input type="text" id="time-taken" value="00:00:00">
+
+    <div id="timer-container">
+        <button type="button" id="start" onclick="start()" class="timer-button">
+            <span class="material-icons">play_arrow</span> 
+        </button>
+        <button type="button" id="add" onclick="add()" class="timer-add">
+            <span class="material-icons">add</span>
+        </button>
+        <button type="button" id="finished" onclick="finished()" class="timer-finished">
+            <span class="material-icons">stop</span>
+        </button>
+    </div>
+    <input id="new-task">
+</div>
+<div id="tasks-container">
+    <h2>Past tasks</h2>
+    <div id="past">
+    <ul id="past-tasks-ul">
+    </ul>
+    </div>
+</div>
+<script type="text/javascript" src="taskTimer.js"></script>
+</body>
+
+</html>
