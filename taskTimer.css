@@ -105,3 +105,11 @@ ul {
     list-style-type: none;
     font-size: 1.3em;
 }
+#radius-select{
+    width: 3em;
+     height: 1.9em;
+     font-size: 1.2em;
+     text-align: center;
+     margin-right: 1em;
+     border:2px solid black;;
+ }

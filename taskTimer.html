@@ -13,9 +13,18 @@
 <div id="container">
     <div id="current-task">
     </div>
-
+    <div>
     <input type="text" id="time-taken" value="00:00:00">
-
+    <select  id="radius-select">
+        <option value="0">0</option>
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+        <option value="25">25</option>
+        <option value="30">30</option>
+      </select>
+    </div>
     <div id="timer-container">
         <button type="button" id="start" onclick="start()" class="timer-button">
             <span class="material-icons">play_arrow</span> 

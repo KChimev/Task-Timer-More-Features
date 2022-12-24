@@ -42,11 +42,28 @@ function start(){
         updateInterfaceControls();
         }
     else if(document.getElementById("stop")!=null){
-       updateInterfaceTime();
-       updatePassedTime();
-       clearInterval(interval);
-       interval=null;
-       updateInterfaceControls();
+        updateInterfaceTime();
+        updatePassedTime();
+        clearInterval(interval);
+        interval=null;
+        updateInterfaceControls();
+        var selectedRadius=document.getElementById("radius-select").value;
+        if(selectedRadius!="0"){
+          var zero=0;
+          var leftSecs=parseInt(timeArr[2],10);
+          timeArr[2]=zero.toString().padStart(2,"00");
+          var mins=parseInt(timeArr[1],10);
+          var leftMins=mins%selectedRadius+leftSecs/60;
+          if(leftMins>(selectedRadius/2)){
+             mins=mins-(mins%parseInt(selectedRadius,10))+parseInt(selectedRadius,10);
+          }
+          else if(leftMins<(selectedRadius/2)){
+             mins=mins-(mins%parseInt(selectedRadius,10));
+          }
+          timeArr[1]=mins.toString().padStart(2,"00");
+          updatePassedTime();
+          updateInterfaceTime();
+        }
     } 
     }
     else if(finishedTask==true) {
